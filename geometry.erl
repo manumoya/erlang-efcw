@@ -9,6 +9,8 @@
 -module(geometry).  
 -export([area/1]). 
 
+pi()->3.14159.
+
 area({rectangle, Width, Height}) -> Width * Height;
-area({circle, R})                -> 3.14159 * R * R;
-area({square, X})            -> X * X.
+area({circle, R})                -> pi() * R * R;
+area({square, X})                -> X * X.
